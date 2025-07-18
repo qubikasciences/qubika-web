@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubika Sciences - Consultoría de IA para RH</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (usando una versión simplificada del logo) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔷</text></svg>">
+
+    <style>
+        /* Usando la fuente Inter importada */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* Fondo oscuro principal */
+            color: #e5e7eb; /* Color de texto gris claro */
+        }
+        /* Degradado para fondos de sección y elementos destacados */
+        .gradient-bg {
+            background: linear-gradient(145deg, #111827, #0a0a0a);
+        }
+        /* Degradado para texto */
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Estilo para las tarjetas de servicio */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Contenedor Principal -->
+    <div id="home">
+
+        <!-- Header -->
+        <header class="bg-black/60 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-2">
+                    <img src="https://googleusercontent.com/file_content/0" alt="Logo de Qubika Sciences" class="h-8 w-auto" onerror="this.onerror=null; this.src='https://placehold.co/150x40/000000/FFFFFF?text=Qubika';">
+                </a>
+                
+                <!-- Navegación para Desktop -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Servicios</a>
+                    <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Nosotros</a>
+                    <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Contacto</a>
+                </nav>
+                
+                <!-- Botón de Contacto -->
+                <a href="#contact" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300">
+                    Solicitar Demo
+                </a>
+
+                <!-- Menú Móvil (Hamburguesa) -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            
+            <!-- Menú desplegable para Móvil -->
+            <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+                <a href="#services" class="block py-2 text-gray-300 hover:text-blue-400">Servicios</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-blue-400">Nosotros</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-blue-400">Contacto</a>
+                 <a href="#contact" class="mt-4 block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300">
+                    Solicitar Demo
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="pt-24">
+            <section class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
+                    Transforma tus Recursos Humanos con <span class="gradient-text">Inteligencia Artificial</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    En Qubika Sciences, potenciamos tus decisiones de talento con análisis de datos avanzados y soluciones de IA a la medida.
+                </p>
+                <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 inline-block transform hover:scale-105">
+                    Descubre Nuestros Servicios
+                </a>
+            </section>
+
+            <!-- Sección de Servicios -->
+            <section id="services" class="py-20 gradient-bg">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Nuestras Soluciones de IA para RH</h2>
+                        <p class="text-gray-400 mt-2">Optimizamos cada etapa del ciclo de vida del colaborador.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Tarjeta de Servicio -->
+                        <div class="service-card bg-gray-900/50 border border-gray-700 p-8 rounded-xl">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600/20 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M12 12m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"/><path d="M12 2a10 10 0 0 0 -10 10c0 2.24 .83 4.3 2.2 5.86l1.8 -1.86a6.983 6.983 0 0 1 0 -8a6.983 6.983 0 0 1 8 0c.93 .93 1.54 2.1 1.76 3.33l1.92 -1.1a10 10 0 0 0 -11.68 -6.23z"/></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Análisis de Perfiles</h3>
+                            <p class="text-gray-400">Análisis de imágenes, calidad de información del perfil y detección de perfiles exitosos.</p>
+                        </div>
+                        
+                        <!-- Tarjeta de Servicio -->
+                        <div class="service-card bg-gray-900/50 border border-gray-700 p-8 rounded-xl">
+                             <div class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-600/20 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="m9 15 3-3 3 3"/></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Evaluación y Objetivos</h3>
+                            <p class="text-gray-400">Análisis de evaluaciones de desempeño y de la calidad de los objetivos (OKR's).</p>
+                        </div>
+
+                        <!-- Tarjeta de Servicio -->
+                        <div class="service-card bg-gray-900/50 border border-gray-700 p-8 rounded-xl">
+                             <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-600/20 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Ciclo del Colaborador</h3>
+                            <p class="text-gray-400">Análisis de encuestas de onboarding, encuestas de salida y predicción de rotación.</p>
+                        </div>
+                        
+                        <!-- Tarjeta de Servicio -->
+                        <div class="service-card bg-gray-900/50 border border-gray-700 p-8 rounded-xl">
+                             <div class="flex items-center justify-center h-12 w-12 rounded-full bg-yellow-600/20 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-400"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Dashboards & Visualización</h3>
+                            <p class="text-gray-400">Creación de dashboards interactivos y reportes en Tableau para una visión clara de tus datos.</p>
+                        </div>
+
+                        <!-- Tarjeta de Servicio -->
+                        <div class="service-card bg-gray-900/50 border border-gray-700 p-8 rounded-xl">
+                             <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-600/20 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400"><path d="m7.5 7.5 9 9"/><path d="m7.5 16.5 9-9"/><path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z"/><path d="M12 12h.01"/></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Chatbots con IA</h3>
+                            <p class="text-gray-400">Desarrollamos chatbots inteligentes para automatizar consultas de RH y mejorar la experiencia del empleado.</p>
+                        </div>
+
+                        <!-- Tarjeta de Servicio -->
+                        <div class="service-card bg-gray-900/50 border border-gray-700 p-8 rounded-xl">
+                             <div class="flex items-center justify-center h-12 w-12 rounded-full bg-indigo-600/20 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Consultoría Estratégica</h3>
+                            <p class="text-gray-400">Te ayudamos a definir tu estrategia de People Analytics y a implementar una cultura data-driven.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección Sobre Nosotros -->
+            <section id="about" class="py-20">
+                <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <div class="relative">
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg transform -rotate-3"></div>
+                            <img src="https://placehold.co/600x400/111827/FFFFFF?text=Equipo+Qubika" alt="Imagen del equipo de Qubika" class="relative rounded-lg shadow-xl">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Somos tus Socios en Innovación de RH</h2>
+                        <p class="text-gray-400 mb-4">
+                            Qubika Sciences nació de la intersección entre la ciencia de datos y la gestión del talento. Creemos que las decisiones más importantes de una empresa, las relacionadas con su gente, deben estar respaldadas por datos precisos y análisis inteligentes.
+                        </p>
+                        <p class="text-gray-400">
+                            Nuestro equipo está compuesto por expertos en IA, científicos de datos y consultores de RH que trabajan en conjunto para ofrecerte soluciones que no solo son tecnológicamente avanzadas, sino también profundamente humanas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Contacto -->
+            <section id="contact" class="py-20 gradient-bg">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">¿Listo para empezar?</h2>
+                        <p class="text-gray-400 mt-2">Hablemos sobre cómo podemos ayudarte a alcanzar tus objetivos. <br>Completa el formulario y un especialista se pondrá en contacto.</p>
+                    </div>
+                    <div class="max-w-xl mx-auto bg-gray-900/50 border border-gray-700 rounded-xl p-8">
+                        <form action="#" method="POST">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nombre</label>
+                                    <input type="text" id="name" name="name" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-sm font-medium text-gray-300 mb-2">Empresa</label>
+                                    <input type="text" id="company" name="company" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">¿En qué podemos ayudarte?</label>
+                                <textarea id="message" name="message" rows="4" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                                    Enviar Mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 border-t border-gray-800">
+            <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+                <p>&copy; 2025 Qubika Sciences. Todos los derechos reservados.</p>
+                <p class="text-sm mt-2">Potenciando el futuro del trabajo.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Script para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
