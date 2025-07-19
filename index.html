@@ -26,7 +26,6 @@
         <span class="text-xl font-bold text-white">🔷 Qubika</span>
       </a>
       <nav class="hidden md:flex space-x-8 items-center">
-        <!-- Servicios con submenú -->
         <div class="relative group">
           <button class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center space-x-1">
             <span>Servicios</span>
@@ -46,7 +45,6 @@
             <a href="optimizacion.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Optimización de Costos y Modelado</a>
           </div>
         </div>
-        <!-- Nosotros con submenú -->
         <div class="relative group">
           <button class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center space-x-1">
             <span>Nosotros</span>
@@ -60,24 +58,30 @@
           </div>
         </div>
         <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Contacto</a>
-        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300">Solicitar Demo</a>
       </nav>
     </div>
   </header>
-  <main class="pt-32 px-6">
-    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-      <div class="md:w-1/2">
-        <h1 class="text-4xl font-bold gradient-text mb-6">Bienvenido a Qubika Sciences</h1>
-        <p class="text-lg text-gray-400 mb-4">
+
+  <main class="pt-32 px-6 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center relative z-10">
+      <div class="md:w-1/2 text-left space-y-6">
+        <h1 class="text-4xl font-extrabold gradient-text">Bienvenido a Qubika Sciences</h1>
+        <p class="text-lg text-gray-300">
           Qubika fue fundada por especialistas de la Facultad de Ciencias de la UNAM para revolucionar la gestión del talento con analítica, IA y automatización. Combinamos datos y tecnología para optimizar decisiones y potenciar el crecimiento organizacional.
         </p>
         <p class="text-gray-400">
           Nuestra propuesta: soluciones inteligentes, ágiles y alineadas al negocio. En Qubika, convertimos datos en acción.
         </p>
+        <a href="#contact" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+          Solicitar una Demo
+        </a>
       </div>
-      <div class="md:w-1/2">
-        <img src="qubika-intelligence.png" alt="Data Intelligence Qubika" class="rounded-lg shadow-lg w-1/2 h-auto mx-auto">
+      <div class="md:w-1/2 hidden md:block relative">
+        <img src="qubika-intelligence.png" alt="Data Intelligence Qubika" class="absolute top-0 right-0 w-[700px] max-w-none object-cover opacity-80">
       </div>
+    </div>
+    <div class="absolute inset-0 md:hidden opacity-10 z-0">
+      <img src="qubika-intelligence.png" alt="Fondo" class="w-full h-full object-cover">
     </div>
   </main>
 </body>
