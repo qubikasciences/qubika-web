@@ -1,84 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qubika Sciences - Consultoría de IA para RH</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0a0a0a;
-      color: #e5e7eb;
-    }
-    .gradient-text {
-      background: linear-gradient(90deg, #3b82f6, #a855f7);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  </style>
-</head>
-<body>
-  <header class="bg-black/60 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="index.html" class="flex items-center space-x-2">
-        <span class="text-xl font-bold text-white">🔷 Qubika</span>
-      </a>
-      <nav class="hidden md:flex space-x-8 items-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qubika Sciences</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white">
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-6 py-4 bg-black border-b border-gray-800">
+      <div class="flex items-center gap-2">
+        <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+        <span class="font-bold text-xl">Qubika</span>
+      </div>
+      <nav class="flex items-center gap-8">
         <div class="relative group">
-          <button class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center space-x-1">
-            <span>Servicios</span>
-            <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="absolute left-0 mt-2 w-72 bg-gray-800 border border-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50">
-            <a href="ingenieria.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Ingeniería de Datos</a>
-            <a href="arquitectura.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Arquitectura y Gobierno de Datos</a>
-            <a href="ciencia.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Ciencia de Datos</a>
-            <a href="analitica.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Analítica de Datos</a>
-            <a href="bi.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">BI, Tableros y Visualizaciones</a>
-            <a href="ia-chatbots.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">IA y Chatbots</a>
-            <a href="apps-web.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Apps y Páginas Web</a>
-            <a href="people.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">People Analytics y RH</a>
-            <a href="optimizacion.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Optimización de Costos y Modelado</a>
-          </div>
+          <button class="flex items-center gap-1">Servicios <span>&#x25BE;</span></button>
+          <ul class="absolute hidden group-hover:block bg-black border border-gray-800 mt-2 rounded shadow-lg text-sm w-64">
+            <li class="px-4 py-2 hover:bg-gray-800">Ingeniería de Datos</li>
+            <li class="px-4 py-2 hover:bg-gray-800">Arquitectura y Gobierno de Datos</li>
+            <li class="px-4 py-2 hover:bg-gray-800">Ciencia de Datos</li>
+            <li class="px-4 py-2 hover:bg-gray-800">Analítica de Datos</li>
+            <li class="px-4 py-2 hover:bg-gray-800">BI y Visualizaciones</li>
+            <li class="px-4 py-2 hover:bg-gray-800">IA y Chat Bots</li>
+            <li class="px-4 py-2 hover:bg-gray-800">Apps y Páginas Web</li>
+            <li class="px-4 py-2 hover:bg-gray-800">People Analytics y RH</li>
+            <li class="px-4 py-2 hover:bg-gray-800">Optimización de Costos y Modelado</li>
+          </ul>
         </div>
         <div class="relative group">
-          <button class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center space-x-1">
-            <span>Nosotros</span>
-            <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="absolute left-0 mt-2 w-48 bg-gray-800 border border-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50">
-            <a href="quienes-somos.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Quiénes somos</a>
-            <a href="valores.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Valores</a>
-          </div>
+          <button class="flex items-center gap-1">Nosotros <span>&#x25BE;</span></button>
+          <ul class="absolute hidden group-hover:block bg-black border border-gray-800 mt-2 rounded shadow-lg text-sm">
+            <li class="px-4 py-2 hover:bg-gray-800">Quiénes Somos</li>
+            <li class="px-4 py-2 hover:bg-gray-800">Valores</li>
+          </ul>
         </div>
-        <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Contacto</a>
+        <a href="#">Contacto</a>
       </nav>
-    </div>
-  </header>
-  
-  <main class="pt-32 px-6 relative/80 overflow-hidden bg-cover bg-right bg-no-repeat" style="background-image: url('qubika-intelligence (1).png');">
-    <div class="absolute inset-0 bg-black bg-opacity-80 z-0"></div>
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center relative z-10">
-      <div class="md:w-2/3 text-left space-y-6">
-        <h1 class="text-4xl font-extrabold gradient-text">Bienvenido a Qubika Sciences</h1>
-        <p class="text-lg text-gray-300">
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-cover bg-center bg-no-repeat h-screen"
+      style="background-image: url('qubika-intelligence (1).png');"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-6 py-32 text-white">
+        <h1 class="text-4xl md:text-5xl font-bold text-blue-400 mb-6">
+          Bienvenido a Qubika Sciences
+        </h1>
+        <p class="text-lg md:text-xl mb-6">
           Qubika fue fundada por especialistas de la Facultad de Ciencias de la UNAM para revolucionar la gestión del talento con analítica, IA y automatización. Combinamos datos y tecnología para optimizar decisiones y potenciar el crecimiento organizacional.
         </p>
-        <p class="text-gray-400">
+        <p class="text-base md:text-lg mb-8">
           Nuestra propuesta: soluciones inteligentes, ágiles y alineadas al negocio. En Qubika, convertimos datos en acción.
         </p>
-        <a href="#contact" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+        <a
+          href="#"
+          class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition"
+        >
           Solicitar una Demo
         </a>
       </div>
-    </div>
-  </main>
-</body>
+    </section>
+  </body>
 </html>
 
